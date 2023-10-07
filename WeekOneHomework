@@ -65,12 +65,14 @@ public with sharing class WeekOneHomework {
                 
         //4.  Declare an integer variable and assign a value in the same line
 			
-        	Integer HowManyPets = 2
+        	Integer HowManyPets = 2;
        
        //5.  Print out your integer to the debug log
-        	
-            System.debug (HowManyPets);
+        	System.debug (HowManyPets);
        			
-    }    
-
+    
+       }     
 }
+
+    
+
