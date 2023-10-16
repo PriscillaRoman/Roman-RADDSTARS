@@ -1,0 +1,46 @@
+public with sharing class CommentingOnCodeExercise {
+
+    /**
+     * Your Assignment is to add comments describing what is being done in the methods below.
+     * Call out the concepts you learned in your readings and in class.
+     */
+
+    public static void cartValues() {
+
+        Integer minimumCartValue = 50;
+
+        Integer itemA = 10;
+        Integer itemB = 20;
+        Integer itemC = 45;
+
+        		//Here the code is establishing the integar variables and their values.//
+        		
+        Integer cartValue = itemA + itemB;
+        		// Line 18 is stating that the integar variable "CartValue" is equal to iteamA (10) plus itemB(20)//
+        		
+
+        Boolean cartMinimumMet = cartValue >= minimumCartValue;
+        		/* Line 22 is asking for a true or false for the variable named "cartMinimumMet" stating that cartValue needs to be 
+        		 * greater than or equal to the value for the integar variable "minimumCartValue." In this example the cartValue (30)
+                 * is less than the minimumCartValue (50). So the boolean would return false.*/
+
+        System.debug('Have we reached the minimum: ' + cartMinimumMet);
+        		/* I need more time get a good understanding of System.debug feature, but if I recall correctly, we are asking the
+        		 * debug log to check to see if the cartMinimumMet has the minium. I am curious if it'll return true or false based off
+        		 * the boolean up above*/  
+        		
+
+        cartValue = cartValue + itemC;
+        		/* Line 33 is establishing that the value for cartValue is now cartValue(30) plus itemC(45). Totally to a value 
+        		 * of 75 now.*/
+
+        cartMinimumMet = cartValue >= minimumCartValue;
+        		// This should come back true now because the new value from Line 33 is greater than the minimumCartValue(50)//
+
+        System.debug('How about now? : ' + cartMinimumMet);
+        		//Going back to comment in Line 28, but I am hoping that I am along the correct lines that this should return true now.//
+
+    }
+
+
+}
